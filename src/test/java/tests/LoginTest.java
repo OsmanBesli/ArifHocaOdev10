@@ -10,7 +10,7 @@ public class LoginTest extends TestBase {
     @Test
     public void  login(){
         driver.get("https://www.saucedemo.com/");
-        loginPage =new LoginPage(driver);
+        loginPage =new LoginPage(driver,driverWait);
 
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("FailPassword");
